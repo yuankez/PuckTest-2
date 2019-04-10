@@ -52,7 +52,7 @@
           }
         });
         // First, reset Puck.js
-        connection.write("aaa", function() {
+        connection.write("reset();\n", function() {
           // Wait for it to reset itself
           setTimeout(function() {
             // Now tell it to write data on the current light level to Bluetooth
