@@ -1,6 +1,6 @@
 <html>
-<head>
-<script>
+ <head>
+ </head>
  function myFunction(){
   //var hiddenElement = document.createElement('a');
   var tdata = [];
@@ -8,13 +8,10 @@
    var i;
    for(i = 0; i < 480; i ++){
    tdata[i] = E.getTemperature();
-   print(tdata);
+   document.getElementById("myText").innerHTML = tdata;
    }
   }
- 
-</script>
-</head>
-<body onload="myFunction()">
-<h1>"the value for number is: " <span id="myText"></span></h1>
-</body>
+  <body onload="myFunction()">
+ <h1>"the value for number is: " <span id="myText"></span></h1>                    
+ </body>
 </html>
